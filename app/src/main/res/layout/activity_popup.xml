@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popup_border">
+
+
+    <TextView
+        android:id="@+id/missYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Until Next Time...?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/logOutEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/white_border"
+        android:text="LogOut"
+        android:textAllCaps="false"
+        android:textColor="@drawable/gradient_background"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logOutCancel"
+        app:layout_constraintTop_toBottomOf="@id/missYou"
+
+         />
+
+    <Button
+        android:id="@+id/logOutCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/white_border"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@drawable/gradient_background"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logOutEnd"
+        app:layout_constraintTop_toBottomOf="@id/missYou"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

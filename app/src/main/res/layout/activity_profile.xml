@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEDED"
+
+    >
+
+
+
+    <View
+
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_background"
+
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:src="@drawable/ic_backbutton_foreground"
+        app:layout_constraintBottom_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="@id/topBar"
+        app:layout_constraintTop_toTopOf="@id/topBar"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/searchbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:src="@drawable/ic_search_foreground"
+        app:layout_constraintBottom_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toEndOf="@id/backbutton"
+        app:layout_constraintEnd_toStartOf="@id/profilebutton"
+        app:layout_constraintTop_toTopOf="@id/topBar"
+        tools:ignore="ContentDescription" />
+
+
+
+    <ImageButton
+        android:id="@+id/profilebutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:src="@drawable/ic_profile_icon"
+        app:layout_constraintBottom_toBottomOf="@id/topBar"
+        app:layout_constraintEnd_toEndOf="@id/topBar"
+        app:layout_constraintTop_toTopOf="@id/topBar"
+        tools:ignore="ContentDescription" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:orientation="horizontal"
+        android:src="@drawable/ic_profile_pic_foreground"
+        app:layout_constraintBottom_toTopOf="@id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gradient_background"
+        android:text="LOGOUT"
+        android:textColor="#F1FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/EmailBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_icon" />
+    <TextView
+        android:id="@+id/EmailBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient_background"
+        android:padding="5dp"
+        android:text="EMAIL : "
+        android:textColor="#F1FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logoutButton"
+        app:layout_constraintBottom_toTopOf="@id/usernamEmail"/>
+
+    <EditText
+        android:id="@+id/usernamEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="email"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/usernameBar"
+        app:layout_constraintTop_toBottomOf="@id/EmailBar"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/usernameBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient_background"
+        android:padding="5dp"
+        android:text="USERNAME : "
+        android:textColor="#F1FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/usernamEmail"
+        app:layout_constraintBottom_toTopOf="@id/greetingsTextUsername"
+        />
+
+
+    <TextView
+        android:hint="username"
+        android:id="@+id/greetingsTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/usernameBar"
+        app:layout_constraintBottom_toTopOf="@id/FavouriteBar"
+        android:textSize="20sp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/FavouriteBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient_background"
+        android:padding="5dp"
+        android:text="FAVOURITES : "
+        android:textColor="#F1FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/greetingsTextUsername"
+        app:layout_constraintBottom_toTopOf="@id/scroll1"
+        />
+    <ScrollView
+        android:id="@+id/scroll1"
+        app:layout_constraintTop_toBottomOf="@id/FavouriteBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        android:id="@+id/profileRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/FavouriteBar"
+
+        tools:itemCount="5"
+        />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

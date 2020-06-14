@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">RegenFood</string>
+    <string name="time_difficulty">Time / Calories</string>
+    <string name="ingredient_1_teaspoon">Ingredient - 1 teaspoon</string>
+    <string name="ingredient_cups">Ingredient - ½ Cups</string>
+    <string name="ingredient_4_cloves">Ingredient - 4 cloves</string>
+    <string name="ingredient_2_cans">Ingredient - 2 cans</string>
+    <string name="ingredient_3">Ingredient - 3</string>
+    <string name="ingredient_2_cups">Ingredient - 2 Cups</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="description_of_the_food">Description of the food</string>
+    <string name="description">Description</string>
+
+    <string name="step_by_step">Step-by-Step</string>
+    <string name="step_1">1</string>
+    <string name="step_2">2</string>
+    <string name="step_3">3</string>
+    <string name="step_4">4</string>
+    <string name="loading">Loading…</string>
+
+    <string-array name="Burgers">
+        <item>CheeseBurger</item>
+        <item>ChickenBurger</item>
+        <item>Double Cheese Burger</item>
+        <item>Hamburger</item>
+        <item>Jack Daniels</item>
+    </string-array>
+    <string-array name="Categories">
+        <item>Meals</item>
+        <item>Dishes</item>
+        <item>Cuisines</item>
+        <item>Diet</item>
+        <item>Health</item>
+    </string-array>
+
+
+</resources>

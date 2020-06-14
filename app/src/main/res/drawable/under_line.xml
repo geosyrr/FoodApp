@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    // The width and color of the border
+    <stroke
+        android:width="2dp"
+        android:color="#17060902" />
+
+
+
+
+</shape>
